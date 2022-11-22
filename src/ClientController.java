@@ -1,10 +1,10 @@
-
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.io.*;
 import java.net.Socket;
-public class ClientController
-{
+
+import javax.swing.*;
+
+public class ClientController {
 
     private static Socket socket;
 

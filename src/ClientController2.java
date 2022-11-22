@@ -1,15 +1,11 @@
 import java.net.ConnectException;
-import javax.swing.*;
-
 import java.io.*;
-
 import java.awt.event.ActionEvent;
 
 import java.net.Socket;
-
+import javax.swing.*;
 
 public class ClientController2 {
-
 
     private static Socket socket;
 
@@ -132,8 +128,7 @@ public class ClientController2 {
         try {
             return (GameState)objectInputStream.readObject();
         }
-        catch (StreamCorruptedException e)
-        {
+        catch (StreamCorruptedException e) {
             view.setTextArea("Your opponent has rage quit. Game over.");
             isLive = false;
         }
